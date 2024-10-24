@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando el Total</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card m-3">
+            <div class="card-header bg-success">
+                <h1 class="h1 text-center text-white "> Calculando Total </h1>
+            </div>
+            <div class="card-body">
+                <div class="mb-3 row">
+                    <label for="precio" class="col-sm-2 col-form-label">Precio</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="text-end px-3" name="precio" id="precio">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="cantidad" class="col-sm-2 col-form-label">cantidad</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="text-end px-3" name="cantidad" id="cantidad" disabled>
+                    </div>
+                    <div class="col-sm-7">
+                        <button class="btn  text-success aumentar mx-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                            </svg>
+                        </button>
+                        <button class="btn text-danger disminuir">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="precio" class="col-sm-2 col-form-label">Total</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="text-end px-3" name="total" id="total">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
